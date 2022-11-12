@@ -34,18 +34,6 @@ class RC:
         return code.type == RCType.CODE_SUCCESS
 
     RC_SUCCESS = ReturnCode(RCModule.functions, RCType.CODE_SUCCESS, "No errors were found")
-    RC_ITEMS_PATH_ERROR = ReturnCode(RCModule.functions, RCType.CODE_FILEPATH_ERROR, "A nonexistent path to the "
-                                                                                  "items_path "
-                                                                                  "file is specified")
-    RC_ITEMS_TEST_PATH_ERROR = ReturnCode(RCModule.functions, RCType.CODE_FILEPATH_ERROR, "A nonexistent path to the "
-                                                                                     "items_test_path "
-                                                                                     "file is specified")
-    RC_POLYGONS_PATH_ERROR = ReturnCode(RCModule.functions, RCType.CODE_FILEPATH_ERROR,
-                                       "A nonexistent path to the polygon_path "
-                                       "file is specified")
-    RC_ERROR_CHECKING_PATH = ReturnCode(RCModule.functions, RCType.CODE_ERROR_CHECKING_PATH,
-                                        "The method checking_path worked "
-                                        "with an error")
     RC_OPENING_IMAGE_ERROR = ReturnCode(RCModule.functions, RCType.CODE_ERROR_OPENING_IMAGE, "Image cannot be opened and "
                                                                                           "identified")
     RC_PREPROC_IMG_ERROR = ReturnCode(RCModule.functions, RCType.CODE_PREPROC_IMG_ERROR, "The method preproc_img worked "
